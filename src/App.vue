@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <van-button square type="primary">方形按钮</van-button>
+    <router-view></router-view>
   </div>
 </template>
 
