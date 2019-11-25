@@ -5,11 +5,16 @@ import store from './store'
 // 使用rem插件
 import 'amfe-flexible'
 // 使用vant组件库
-import Vant from 'vant'
-import 'vant/lib/index.css'
+import Vant, { Lazyload } from 'vant'
+import 'vant/lib/index.less'
 // 覆盖vant的样式
 import '@/styles/index.less'
+
+import myPlugin from '@/utils/plugin'
+Vue.use(myPlugin)
+
 Vue.use(Vant)
+Vue.use(Lazyload)
 
 Vue.config.productionTip = false
 
